@@ -1,0 +1,414 @@
+/** Common **/
+a {
+  text-decoration: none !important;
+}
+.graybg {
+  padding: 3rem 1rem;
+  background-color: rgb(212, 212, 212);
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: inherit;
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.gold {
+  color: rgb(238, 171, 41);
+}
+.line {
+  width: 55%;
+  height: 0.25rem;
+  margin: 1rem 0;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), gold);
+  border-radius: 1px;
+  display: inline-block;
+}
+.imgGallery .line,
+.fields .line {
+  width: 20%;
+}
+.title {
+  font-family: "Lalezar", cursive;
+  font-size: 2rem;
+  color: black;
+  text-shadow: 2px 2px 2px gold;
+  margin-bottom: 0;
+}
+.text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 576px) {
+  .hideInSmall {
+    display: none;
+  }
+}
+
+/** Header **/
+.header {
+  background: url("../img/bg-10.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 23.5rem;
+  position: relative;
+}
+.header .container {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+.logo {
+  width: 8.5rem;
+  border: 1px solid white;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px gold;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition-duration: 0.8s;
+  transition-property: transform;
+  cursor: pointer;
+}
+.logo:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+.companyName {
+  font-family: "Lalezar", cursive;
+  text-shadow: 2px 2px 5px black;
+  color: white;
+  font-size: 2.5rem;
+}
+.companyQuote {
+  color: gold;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid white;
+  padding: 0.25rem 1rem;
+  text-shadow: 2px 2px 5px black;
+  margin: 0;
+}
+
+/** info under header **/
+.underHeader {
+  display: flex;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: -1.25rem;
+  width: fit-content;
+}
+@media only screen and (max-width: 600px) {
+  .underHeader {
+    display: none;
+  }
+}
+.underHeader .introInfo {
+  padding: 0.35rem 0.5rem;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rakkas", cursive;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 1px solid white;
+}
+.introInfo:hover {
+  transform: scale(1.2);
+}
+.underHeader .introInfo svg {
+  margin-left: 0.5rem;
+}
+.underHeader .introInfoBlack {
+  background-color: black;
+  color: white;
+}
+.underHeader .introInfoBlack svg {
+  color: white;
+}
+.underHeader .introInfoGold {
+  background-color: gold;
+  color: white;
+}
+.underHeader .introInfoGold svg {
+  color: white;
+}
+.underHeader .introInfoGray {
+  background-color: rgb(212, 212, 212);
+  color: black;
+}
+.underHeader .introInfoGray svg {
+  color: black;
+}
+
+/** Who Are We **/
+.whoAreWe {
+  padding: 4rem 2.5rem;
+}
+@media only screen and (max-width: 766px) {
+  .whoAreWe .col-12 {
+    width: 86%;
+  }
+}
+.whoAreWe .picture {
+  width: 23rem;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+}
+.whoAreWe .dialog {
+  padding: 1rem;
+}
+.whoAreWe .dialog > div {
+  border: 2px solid black;
+  box-shadow: 3px 3px 2px gold;
+  padding: 1.5rem;
+  height: 100%;
+  transition: transform 0.2s;
+  cursor: pointer;
+  background-color: white;
+}
+.whoAreWe .dialog > div:hover {
+  transform: scale(1.1);
+}
+.whoAreWe .dialog svg {
+  color: gold;
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+}
+
+/** Our Fields **/
+.fieldsItems {
+  height: 8.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+  text-align: center;
+  position: relative;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.fieldsItems:hover {
+  transform: scale(1.1);
+}
+.fieldsItems .overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.fieldsItems .bg {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+}
+.fieldsItems .fieldName {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: white;
+  font-family: "Lalezar", cursive;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.55rem;
+  text-shadow: 4px 4px 2px black;
+}
+.fields .react-multi-carousel-list {
+  justify-content: center;
+  padding: 1rem 0;
+}
+.fields .react-multi-carousel-track {
+  width: 100%;
+  display: -moz-box;
+  display: -webkit-box;
+}
+.fields .react-multiple-carousel__arrow {
+  display: none;
+}
+.fields .react-multi-carousel-dot-list {
+  bottom: 0rem;
+  left: 1rem;
+  right: unset;
+}
+
+/** image gallery **/
+.imgGallery {
+  margin: 4rem 1rem;
+}
+.imgGallery .image-gallery {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+@media only screen and (min-width: 600px) {
+  .imgGallery .image-gallery {
+    margin: 2rem 4rem;
+  }
+}
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  width: 35px;
+}
+@media only screen and (max-width: 500px) {
+  .image-gallery-left-nav .image-gallery-svg,
+  .image-gallery-right-nav .image-gallery-svg {
+    width: 25px;
+  }
+}
+
+/** CEO Words **/
+.ceoword .container {
+  text-align: right;
+}
+@media (min-width: 768px) {
+  .ceoword .col-md-7 {
+    width: 59%;
+  }
+}
+.ceoword .title {
+  background-color: rgba(212, 212, 212, 0.897);
+  padding: 1rem 3rem;
+  border-bottom: 2px solid black;
+}
+.ceoword .sub-title {
+  margin-bottom: 1rem;
+}
+.ceoword p {
+  font-size: 0.95rem;
+}
+.ceoword .logo-box {
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+.ceoword .textbox {
+  padding: 2rem 3rem 2rem 4rem;
+  background-color: rgba(212, 212, 212, 0.404);
+}
+
+/** Contact **/
+.contact {
+  margin: 6rem 0;
+  padding: 0 2rem;
+}
+.contact .title {
+  font-size: 1.5rem;
+  text-shadow: none;
+}
+.contact iframe {
+  width: 100%;
+  height: 240px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.contact .sns {
+  background-color: #EEEEEE;
+  height: 240px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-image: url("../img/workers-black.svg");
+  background-repeat: no-repeat;
+  background-size: 15rem;
+  background-position-x: left;
+  background-position-y: bottom;
+}
+.contactnum span,
+.contactnum a {
+  display: flex;
+  align-items: center;
+  margin: 0.65rem 0;
+}
+.contactnum a:hover {
+  color: white;
+  cursor: pointer;
+}
+.contactnum p {
+  margin-bottom: 0;
+  margin-right: 0.5rem;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+.contactnum svg {
+  font-size: 1.15rem;
+}
+.contactnum .phone {
+  color: midnightblue;
+}
+.contactnum .whatsapp {
+  color: #128c7e;
+}
+.contactnum .web {
+  color: #0066ff;
+}
+.contactnum .mail {
+  color: #d64e41;
+}
+.snslinks {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.snslinks svg {
+  font-size: 2.25rem;
+  margin-left: 0.5rem;
+  transition: transform 0.7s ease-in-out;
+}
+.snslinks svg:hover {
+  transform: rotate(360deg);
+}
+.snslinks .facebook {
+  color: #4267b2;
+}
+.snslinks .twitter {
+  color: #1da1f2;
+}
+.snslinks .linkedin {
+  color: #0077b5;
+}
+.snslinks .insta {
+color:#bc2a8d;
+}
+@media only screen and (max-width: 765px) {
+  .contact .row {
+    padding: 0 2rem;
+  }
+  .contact iframe {
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 0px;
+    height: 100%;
+  }
+  .contact .sns {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-image: none;
+  }
+}
+
+/** Credit **/
+.credit{
+  background-color: #EEEEEE;
+  color: black;
+  text-align: center;
+  padding: 0.7rem 0;
+}
+.creditText{
+  margin: 0;
+  font-family: "Lalezar", cursive;
+  font-size: 1rem;
+}
